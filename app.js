@@ -5,7 +5,7 @@ const SIGNAL_URL = "wss://ws.postman-echo.com/raw"; // reliable for hacky demo
 
 // --- Utility: Generate 5-char alphanumeric code (uses CDN nanoid)
 function genCode() {
-  return nanoid(5).toUpperCase();
+  return window.nanoid(5).toUpperCase(); // Yeh line hi sahi hai
 }
 
 // --- DOM helpers
